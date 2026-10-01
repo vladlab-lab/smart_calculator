@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Кольори, які ви можете використовувати для тем -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Кольори калькулятора -->
+    <color name="calc_background">#FF1C1C1C</color> <!-- Темний фон -->
+    <color name="calc_display_text">#FFFFFFFF</color> <!-- Білий текст для дисплея -->
+    <color name="gray_bg">#008000</color>
+    <!-- Кольори кнопок -->
+    <color name="btn_digit_bg">#FF3A3A3A</color> <!-- Фон для цифр (темно-сірий) -->
+    <color name="btn_operator_bg">#FFFFA500</color> <!-- Фон для операторів (помаранчевий) -->
+    <color name="btn_modifier_bg">#FFAAAAAA</color> <!-- Фон для AC, Del (світло-сірий) -->
+    <color name="btn_text_light">#FFFFFFFF</color> <!-- Білий текст -->
+    <color name="btn_text_dark">#FF000000</color>  <!-- Чорний текст -->
+</resources>

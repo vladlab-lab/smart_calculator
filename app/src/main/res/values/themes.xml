@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+        <style name="CalcButton">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">wrap_content</item>
+
+
+            <item name="android:textSize">50sp</item>
+            <item name="android:padding">8dp</item>
+
+        </style>
+
+        <style name="Theme.Laba_5" parent="Theme.AppCompat.Light.NoActionBar">
+
+        </style>
+        <style name="CalcButton.Base">
+                <item name="android:layout_width">80dp</item>
+                <item name="android:layout_height">80dp</item>
+                <item name="android:textSize">32sp</item>
+                <item name="android:textColor">@color/btn_text_light</item>
+                <item name="android:background">@drawable/btn_digit</item>
+                <item name="android:layout_margin">6dp</item>
+        </style>
+
+    <style name="CalcButton.Digit" parent="CalcButton.Base">
+        <item name="android:background">@drawable/btn_digit</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="CalcButton.Operator" parent="CalcButton.Base">
+        <item name="android:background">@drawable/btn_operator</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="CalcButton.Modifier" parent="CalcButton.Base">
+        <item name="android:background">@drawable/btn_modifier</item>
+        <item name="android:textColor">@color/btn_text_dark</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="CalcButton.Equal" parent="CalcButton.Base">
+        <item name="android:background">@drawable/btn_operator</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+</resources>

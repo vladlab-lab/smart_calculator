@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calc_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/calculator_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/calc_display_text"
+            android:textSize="50sp"
+            android:gravity="end"
+            android:padding="16dp"
+            android:background="@android:color/transparent"/>
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="6"
+            android:columnCount="4"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true"
+            android:layout_marginTop="16dp">
+
+            <!-- Кнопки -->
+            <Button android:id="@+id/btnAC" style="@style/CalcButton.Modifier" android:text="AC"/>
+            <Button android:id="@+id/btnDel" style="@style/CalcButton.Modifier" android:text="DEL"/>
+            <Button android:id="@+id/btnOpen" style="@style/CalcButton.Operator" android:text="("/>
+            <Button android:id="@+id/btnClose" style="@style/CalcButton.Operator" android:text=")"/>
+
+            <Button android:id="@+id/btn7" style="@style/CalcButton.Digit" android:text="7"/>
+            <Button android:id="@+id/btn8" style="@style/CalcButton.Digit" android:text="8"/>
+            <Button android:id="@+id/btn9" style="@style/CalcButton.Digit" android:text="9"/>
+            <Button android:id="@+id/btnDiv" style="@style/CalcButton.Operator" android:text="÷"/>
+
+            <Button android:id="@+id/btn4" style="@style/CalcButton.Digit" android:text="4"/>
+            <Button android:id="@+id/btn5" style="@style/CalcButton.Digit" android:text="5"/>
+            <Button android:id="@+id/btn6" style="@style/CalcButton.Digit" android:text="6"/>
+            <Button android:id="@+id/btnMul" style="@style/CalcButton.Operator" android:text="×"/>
+
+            <Button android:id="@+id/btn1" style="@style/CalcButton.Digit" android:text="1"/>
+            <Button android:id="@+id/btn2" style="@style/CalcButton.Digit" android:text="2"/>
+            <Button android:id="@+id/btn3" style="@style/CalcButton.Digit" android:text="3"/>
+            <Button android:id="@+id/btnSub" style="@style/CalcButton.Operator" android:text="−"/>
+
+            <Button android:id="@+id/btn0" style="@style/CalcButton.Digit" android:text="0"/>
+            <Button android:id="@+id/btnDot" style="@style/CalcButton.Digit" android:text="."/>
+            <Button android:id="@+id/btnAdd" style="@style/CalcButton.Operator" android:text="+"/>
+            <Button android:id="@+id/btnEqual" style="@style/CalcButton.Equal" android:text="="/>
+
+        </GridLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
